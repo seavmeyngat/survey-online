@@ -29,6 +29,23 @@ img{
     border-radius: 20px;
     background-color: #F3C2C2;
 }
+.form-label{
+   margin-top: 30px;
+   margin-left: 30px;
+   font-size: 20px;
+   font-weight: bold;
+}
+.form-controls{
+    display: block;
+    width: 90%;
+    height: 40px;
+    /* margin-top: 10px; */
+    margin-left: 30px;
+    border-radius: 10px;
+   
+}
+
+
 .box-2{
     width: 100%;
     height: auto;
@@ -45,7 +62,7 @@ img{
     height: 100px;
     background-color: red;
 }
-h1{
+.box-1 h1{
     margin-left: 8%;
     color: #1655F6;
 }
@@ -55,6 +72,61 @@ hr{
 h5{
     margin-left: 8%;
     color: red;
+}
+
+@media (max-width: 768px) {
+    .boxs {
+        width: 90%;
+    }
+    
+    .box-2 {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    img {
+        height: 100px;
+    }
+
+    h1, h5 {
+        margin-left: 5%;
+    }
+}
+
+/* Media Query for Smaller Mobile Devices */
+@media (max-width: 480px) {
+    .boxs {
+        width: 95%;
+    }
+    
+    img {
+        
+        height: 100px;
+    }
+
+    .box-1 {
+        height: 120px;
+    }
+
+    .box-2 {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    h1, h5 {
+        margin-left: 3%;
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }
 
 
