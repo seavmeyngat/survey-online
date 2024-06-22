@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="boxs">
             <div class="box-img">
                 <img src="businessman-completing-online-survey-form-260nw-1291275367.webp" alt="">
@@ -24,37 +24,227 @@
             <div class="box-1">
 
                 <label for="exampleFormControlInput1" class="form-label">*Name</label>
-                <input type="email" class="form-controls" id="exampleFormControlInput1" placeholder="enter your name">
+                <input type="email" class="form-controls" id="exampleFormControlInput1" name="form" placeholder="enter your name">
 
             </div>
             <div class="box-1">
                 <label for="exampleFormControlInput1" class="form-label">*Age</label>
-                <input type="email" class="form-controls" id="exampleFormControlInput2" placeholder="enter your age">
+                <input type="number" class="form-controls" id="exampleFormControlInput2" placeholder="enter your age">
             </div>
             <div class="box-1">
-                <p>Current Grade Level</p>
-                <input class="form-controls" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Default radio
-                </label>
-                <input class="form-controls" type="radio" name="exampleRadios" id="exampleRadios2" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Default radio
-                </label>
+                <h5>Current Grade Level</h5>
+
+                  <input class="check" type="radio" id="Grade 9" name="fav_language" value="Grade-9">
+                  <label class="later" for="Grade 9">Grade 9</label><br>
+                  <input class="check" type="radio" id="Grade 10" name="fav_language" value="Grade-10">
+                  <label class="later" for="Grade-10">Grade 10</label><br>
+                  <input class="check" type="radio" id="Grade-11" name="fav_language" value="Grade-11">
+                  <label class="later" for="Grade-11">Grade 11</label><br>
+                  <input class="check" type="radio" id="Grade-12" name="fav_language" value="Grade-12">
+                  <label class="later" for="Grade-12">Grade 10</label><br>
+                  <input class="check" type="radio" id="Grade-12-pass" name="fav_language" value="Grade-12-pass">
+                  <label class="later" for="Grade-12-pass">Grade 11</label><br>
+              
+            </div>
+            <div class="box-1">
+                <h5> Type of School:</h5>
+
+                  <input class="check" type="radio" id="Private-School" name="type-school" value="Private-School">
+                  <label class="later" for="Private-School">Private School</label><br>
+                  <input class="check" type="radio" id="Public-School" name="type-school" value="Public-School">
+                  <label class="later" for="Public-School">Public School</label><br>
+                  Other School:<input type="text" class="other">
+              
+            </div>
+            <div class="box-1">
+                <h2>Section 1: Interest in Web Development</h2>
+                <hr>
+                <section>
+                    <h5> 1.How interested are you in learning web development?</h5>
+                  <input class="check" type="radio" id="s1-01" name="s1-01" value="s1-01">
+                  <label class="later" for="s1-01">Very Interested</label><br>
+                  <input class="check"  type="radio" id="s1-02" name="s1-01" value="s1-02">
+                  <label class="later" for="s1-02">Interested</label><br>
+                  <input class="check" type="radio" id="s1-03" name="s1-01" value="s1-03">
+                  <label class="later" for="s1-0">Neutral</label><br>
+                  <input class="check" type="radio" id="s1-04" name="s1-01" value="s1-04">
+                  <label class="later" for="s1-04">Not Interested</label><br>
+                </section>
+                <section>
+                    <h5> 2.Have you had any previous experience with web development?</h5>
+                  <input class="check" type="radio" id="s2-01" name="s1-02" value="s2-01">
+                  <label class="later" for="s1-01">Yes</label><br>
+                  <input class="check" type="radio" id="s2-02" name="s1-02" value="s2-02">
+                  <label class="later" for="s2-02">No</label><br>
+                </section>
+                <section>
+                    <h5>3.If yes, please describe your experience (e.g., self-taught, school projects,online courses, etc.):</h5>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </section>
+
+                <section>
+                <h5> 4.Which aspects of web development interest you the most? Select all that apply)</h5>
+                <input class="check" type="checkbox" value="" id="flexCheckDefault">
+                <label class="later" for="flexCheckDefault"> Front-end Development HTML, CSS, JavaScript)</label><br>
+                <input class="check" type="checkbox" value="" id="flexCheckDefault1">
+                <label class="later" for="flexCheckDefault"> Back-end Development Server-side programming, databases)</label><br>
+                <input class="check" type="checkbox" value="" id="flexCheckDefault2">
+                <label class="later" for="flexCheckDefault"> Full-stack Development</label><br>
+                <input class="check" type="checkbox" value="" id="flexCheckDefault3">
+                <label class="later" for="flexCheckDefault"> Mobile Application Development</label><br>
+                <input class="check" type="checkbox" value="" id="flexCheckDefault4">
+                <label class="later" for="flexCheckDefault"> Web Design and User Experience UX</label><br>
+                  Other (please specify):<input type="text" class="other">
+
+                </section>
+            </div>
+            <div class="box-1">
+                <h2>Section 2: Familiarity with Active Pedagogy</h2>
+                <hr>
+                <section>
+                    <h5>  1.Are you familiar with the concept of active pedagogy?</h5>
+                  <input class="check" type="radio" id="s3-01" name="s2-01" value="s3-01">
+                  <label class="later" for="s1-01">Yes</label><br>
+                  <input class="check" type="radio" id="s4-02" name="s2-01" value="s4-02">
+                  <label class="later" for="s2-02">No</label><br>
+                </section>
+                <section>
+                    <h5>2.If yes, how would you describe your understanding of active pedagogy?</h5>
+                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                </section>
+                <section>
+                    <h5>3Have you ever participated in a learning activity that used active pedagogy
+                        (e.g., project-based learning, collaborative learning, flipped classroom)</h5>
+                  <input class="check" type="radio" id="s4-01" name="s3-01" value="s4-01">
+                  <label class="later" for="s1-01">Yes</label><br>
+                  <input class="check" type="radio" id="s5-02" name="s3-01" value="s5-02">
+                  <label class="later" for="s2-02">No</label><br>
+                </section>
+                <section>
+                    <h5>4.If yes, please describe the activity and your experience:</h5>
+                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
+                </section>
+
+
+                
+
 
 
 
             </div>
-            <div class="box-1"></div>
-            <div class="box-1"></div>
-            <div class="box-1"></div>
-            <div class="box-1"></div>
-            <div class="box-1"></div>
+            <div class="box-1">
+                <h2>Section 3: Learning Preferences and Environment</h2>
+                <hr>
+                <section>
+                    <h5> 1.How do you prefer to learn new skills? Select all that apply)</h5>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault5">
+                    <label class="later" for="flexCheckDefault">Hands-on projects</label><br>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault6">
+                    <label class="later" for="flexCheckDefault">Group work and collaboration</label><br>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault7">
+                    <label class="later" for="flexCheckDefault"> Online tutorials and courses</label><br>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault8">
+                    <label class="later" for="flexCheckDefault"> Lectures and presentations</label><br>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault9">
+                    <label class="later" for="flexCheckDefault"> Self-study</label><br>
+                      Other (please specify):<input type="text" class="other">
+    
+                    </section>
+                    <section>
+                        <h5> 2.What type of learning environment do you find most effective?</h5>
+                        <input class="check" type="checkbox" value="" id="flexCheckDefault10">
+                        <label class="later" for="flexCheckDefault">Classroom setting</label><br>
+                        <input class="check" type="checkbox" value="" id="flexCheckDefault11">
+                        <label class="later" for="flexCheckDefault">Online learning</label><br>
+                        <input class="check" type="checkbox" value="" id="flexCheckDefault12">
+                        <label class="later" for="flexCheckDefault"> Blended learning (a mix of online and in-person)</label><br>
+                       
+                          Other (please specify):<input type="text" class="other">
+        
+                        </section>
+                        <section>
+                            <h5> 3.How important is peer interaction in your learning process?</h5>
+                          <input class="check" type="radio" id="s5-01" name="s5-01" value="s5-01">
+                          <label class="later" for="s5-01">Very Important</label><br>
+                          <input class="check"  type="radio" id="s6-02" name="s5-01" value="s6-02">
+                          <label class="later" for="s6-02">Important</label><br>
+                          <input class="check" type="radio" id="s7-03" name="s5-01" value="s7-03">
+                          <label class="later" for="s7-03">Neutral</label><br>
+                          <input class="check" type="radio" id="s8-04" name="s5-01" value="s8-04">
+                          <label class="later" for="s8-04">Not Important</label><br>
+                          <input class="check" type="radio" id="s9-04" name="s5-01" value="s9-04">
+                          <label class="later" for="s9-04">Not all Important</label><br>
+                        </section>
+                        <section>
+                            <h5>4.How do you feel about receiving feedback and support from instructors during
+                                your learning process?</h5>
+                          <input class="check" type="radio" id="s10-01" name="s6-01" value="s10-01">
+                          <label class="later" for="s5-01">Very Comfortable</label><br>
+                          <input class="check"  type="radio" id="s11-02" name="s6-01" value="s11-02">
+                          <label class="later" for="s11-02">Comfortable</label><br>
+                          <input class="check" type="radio" id="s12-03" name="s6-01" value="s12-03">
+                          <label class="later" for="s12-03">Neutral</label><br>
+                          <input class="check" type="radio" id="s13-04" name="s6-01" value="s13-04">
+                          <label class="later" for="s13-04">Uncomfortable</label><br>
+                          <input class="check" type="radio" id="s14-04" name="s6-01" value="s14-04">
+                          <label class="later" for="s14-04">Very Uncomfortable</label><br>
+                        </section>
+
+
+            </div>
+            <div class="box-1">
+                <h2>Section 4: Expectations and Goals</h2>
+                <hr>
+                <section>
+                    <h5> 1.What do you hope to achieve by learning web development? Select all that
+                        apply)</h5>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault13">
+                    <label class="later" for="flexCheckDefault">Gain basic knowledge and skills</label><br>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault14">
+                    <label class="later" for="flexCheckDefault">Develop advanced skills for career opportunities</label><br>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault15">
+                    <label class="later" for="flexCheckDefault"> Build personal projects and portfolios</label><br>
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault16">
+                    <label class="later" for="flexCheckDefault"> Prepare for further education in computer science</label><br>
+                   
+                      Other (please specify):<input type="text" class="other">
+    
+                    </section>
+                    <section>
+                        <h5>2.How do you think web development skills will help you in your future career or
+                            studies?</h5>
+                        <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+                    </section>
+
+            </div>
+            <div class="box-1">
+                <h2>Section 5: Feedback and Suggestions</h2>
+                <hr>
+               
+                    <section>
+                        <h5> 1.Do you have any suggestions for how the web development training could be
+                            improved to better suit your needs and interests?</h5>
+                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                    </section>
+                    <section>
+                        <h5> 2.Is there anything else you would like to share about your interest in web development or your learning preferences?</h5>
+                        <textarea class="form-control" id="exampleFormControlTextarea6" rows="3"></textarea>
+                    </section>
+
+            </div>
             <div class="box-2">
-                <div class="left">222</div>
-                <div class="right">111</div>
+                <div class="left">
+                    <button class="sm">Submite</button>
+                </div>
+                <div class="right">
+                    <button class="cl">clear form</button>
+                </div>
+               
+            </div>
+            <p class="p-footer">Never submit passwords through Google Forms.</p>
+            <div class="footer">
+                <p>This form was created inside of Pour un sourire d'enfant. <a href="">Report Abuse Forms</a> </p>
+                <h3>WMAD FORM</h3>
             </div>
         </div>
 
