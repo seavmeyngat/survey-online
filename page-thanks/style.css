@@ -1,81 +1,101 @@
 
 .container-fluid {
+    width: 100%;
+    height: 1000px;
     background-color: #FFEFEF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .box {
-    
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
-    max-width: 500px;
+    height: auto; 
+    background-color: white;
     margin: auto;
-    text-align: center;
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
-.title {
+.tittle {
+    width: 100%;
+    height: 80px; 
     background-color: #F3C2C2;
-    border-radius: 15px 15px 0 0;
-    padding: 15px 0;
+    text-align: center; 
+    padding: 10px 0; 
 }
 
-.title h1 {
-    color: #1655F6;
+.tittle h1 {
     margin: 0;
+    font-size: 2rem; 
+}
+
+.paragrab {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+.paragrab h5, .paragrab p {
+    margin: 0;
+    text-align: center; 
+}
+
+.box2 p, .box2 h1, .box2 button {
+    margin: 0;
+    text-align: center; 
+}
+
+.box2 button {
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 20px auto;
+    display: block;
 }
 
 img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 15px;
+    height: auto; 
+}
+h1 {
+    color: #1655F6;
 }
 
 p {
-    font-size: 1.25rem;
-    margin-top: 20px;
+    font-size: 1.2rem; 
 }
 
-
-button {
-    height: 50px; 
-    width: 50%; 
-    max-width: 200px;
-    margin-top: 20px;
-    margin-left: auto; 
-    margin-right: auto; 
-    display: block; 
-    border-radius: 20px;
-    font-size: 1rem; 
-}
-
-
-@media (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .box {
-        width: 90%;
-        padding: 15px;
+        width: 90%; 
     }
 
-    .title h1 {
-        font-size: 1.5rem;
+    .tittle h1 {
+        font-size: 1.5rem; 
     }
 
-    p {
-        font-size: 1rem;
+    .paragrab p, .paragrab h5, .box2 p, .box2 h1 {
+        font-size: 1rem; 
     }
 
-    h1 {
-        font-size: 1.5rem;
-        margin-left: 0;
+    .box2 button {
+        width: 120px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box {
+        width: 95%; 
     }
 
-    button {
-        width: 50%; 
-        max-width: none; 
+    .tittle h1 {
+        font-size: 1.2rem; 
+    }
+
+    .paragrab p, .paragrab h5, .box2 p, .box2 h1 {
+        font-size: 0.9rem; 
+    }
+
+    .box2 button {
+        width: 100px;
+        height: 40px;
     }
 }
