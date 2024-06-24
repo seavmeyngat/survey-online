@@ -1,58 +1,120 @@
-.container{
+/* Base Styles */
+.container {
     width: 100%;
     height: 1024px;
     background-color: #FFEFEF;
 }
-.box{
+
+.box {
     width: 1440px;
     height: 853px;
     background-color: white;
     margin: auto;
 }
-.box-Dashbaord{
+
+.box-Dashbaord {
     width: 1440px;
     height: 76px;
     background-color: #F3C2C2;
     margin: auto;
 }
-.box-all{
+
+.box-all {
     display: flex;
 }
-.left{
+
+.left, .right {
     width: 40%;
     height: auto;
     margin-left: 5%;
 }
-.box-1{
+
+.box-1, .box-2, .box1, .box2 {
     width: 100%;
-    height: 300px;
-    margin-top: 70px;
     background-color: #F3C2C2;
+    margin-top: 70px;
 }
-.box-2{
+
+.box-1 { height: 200px; }
+.box-2 { height: 300px; }
+.box1 { height: 200px; }
+.box2 { height: 300px; }
+
+.box-2 table, .box1 table, .box2 table, .box-1 table {
     width: 100%;
-    height: 300px;
-    margin-top: 70px;
-    background-color: #F3C2C2;
+    height: 100%;
+    text-align: center;
 }
-.right{
-    width: 40%;
-    height: auto;
-    margin-left: 5%;
+
+table, th, td {
+    border: 1px solid black;
 }
-.box1{
-    width: 100%;
-    height: 300px;
-    margin-top: 70px;
-    background-color: #F3C2C2;
-}
-.box2{
-    width: 100%;
-    height: 300px;
-    margin-top: 70px;
-    background-color: #F3C2C2;
-}
-h1{
+
+h1 {
     color: #1655F6;
     margin-left: 45%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens that are 768px wide or less */
+@media (max-width: 768px) {
+    .box, .box-Dashbaord {
+        width: 100%;
+    }
+
+    .box-all {
+        display: block;
+    }
+
+    .left, .right {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .box-1, .box-2, .box1, .box2 {
+        margin-top: 20px;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+/* For screens that are 480px wide or less */
+@media (max-width: 480px) {
+    .container {
+        height: auto; /* Adjust the height to fit content */
+    }
+
+    .box, .box-Dashbaord {
+        width: 100%;
+    }
+
+    .box-all {
+        display: block;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .box-1, .box-2, .box1, .box2 {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    table, th, td {
+        font-size: 0.8rem; /* Adjust font size for readability */
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }
