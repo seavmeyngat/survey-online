@@ -21,15 +21,15 @@
                 <hr>
                 <h5>* Indicates required question</h5>
             </div>
-            <div class="box-1">
-
-                <label for="exampleFormControlInput1" class="form-label">*Name</label>
-                <input type="email" class="form-controls" id="exampleFormControlInput1" name="form" placeholder="enter your name">
-
-            </div>
+            <form onsubmit="return submitForm(event)" id="myForm">
+                
+                <div class="box-1">
+                    <label for="fullname" class="form-label">*Name</label>
+                    <input type="text" class="form-controls" id="fullname" name="form" placeholder="Enter your name">
+                </div>
             <div class="box-1">
                 <label for="exampleFormControlInput1" class="form-label">*Age</label>
-                <input type="number" class="form-controls" id="exampleFormControlInput2" placeholder="enter your age">
+                <input type="number" class="form-controls" id="age" name="form"  placeholder="enter your age">
             </div>
             <div class="box-1">
                 <h5>Current Grade Level</h5>
@@ -198,16 +198,16 @@
                 <section>
                     <h5> 1.What do you hope to achieve by learning web development? Select all that
                         apply)</h5>
-                    <input class="check" type="checkbox" value="" id="flexCheckDefault13">
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault13"  name="goals-achieve">
                     <label class="later" for="flexCheckDefault">Gain basic knowledge and skills</label><br>
-                    <input class="check" type="checkbox" value="" id="flexCheckDefault14">
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault14"  name="goals-achieve">
                     <label class="later" for="flexCheckDefault">Develop advanced skills for career opportunities</label><br>
-                    <input class="check" type="checkbox" value="" id="flexCheckDefault15">
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault15"  name="goals-achieve">
                     <label class="later" for="flexCheckDefault"> Build personal projects and portfolios</label><br>
-                    <input class="check" type="checkbox" value="" id="flexCheckDefault16">
+                    <input class="check" type="checkbox" value="" id="flexCheckDefault16"  name="goals-achieve">
                     <label class="later" for="flexCheckDefault"> Prepare for further education in computer science</label><br>
                    
-                      Other (please specify):<input type="text" class="other">
+                      Other (please specify):<input type="text" class="other-goals-achieve">
     
                     </section>
                     <section>
@@ -232,23 +232,28 @@
                     </section>
 
             </div>
+            <div id="error-message" style="color: red;"></div>
             <div class="box-2">
                 <div class="left">
-                    <button class="sm">Submite</button>
+                    <button type="submit" class="sm">Submit</button>
                 </div>
                 <div class="right">
-                    <button class="cl">clear form</button>
+                    <button class="cl" onclick="clearForm()">clear form</button>
                 </div>
                
             </div>
+            
+            </form>
             <p class="p-footer">Never submit passwords through Google Forms.</p>
             <div class="footer">
                 <p>This form was created inside of Pour un sourire d'enfant. <a href="">Report Abuse Forms</a> </p>
                 <h3>WMAD FORM</h3>
             </div>
         </div>
+        
 
     </div>
+    <script src="index.js"></script>
 
 </body>
 
