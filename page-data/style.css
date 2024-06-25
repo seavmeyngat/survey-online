@@ -1,24 +1,28 @@
 /* Base Styles */
 .container {
     width: 100%;
-    height: 1024px;
+    height: 1000px;
+    overflow: hidden;
     background-color: #FFEFEF;
 }
 
 .box {
-    width: 1440px;
-    height: 853px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
     background-color: white;
     margin: auto;
 }
 
 .box-Dashbaord {
-    width: 1440px;
+    width: 100%;
     height: 76px;
     background-color: #F3C2C2;
     margin: auto;
 }
-
+.box-Dashbaord h1{
+    text-align: center;
+}
 .box-all {
     display: flex;
 }
@@ -55,7 +59,7 @@ h1 {
     margin-left: 45%;
 }
 
-/* Media Queries for Responsiveness */
+
 
 /* For screens that are 768px wide or less */
 @media (max-width: 768px) {
@@ -87,7 +91,7 @@ h1 {
 /* For screens that are 480px wide or less */
 @media (max-width: 480px) {
     .container {
-        height: auto; /* Adjust the height to fit content */
+        height: auto; 
     }
 
     .box, .box-Dashbaord {
@@ -109,7 +113,7 @@ h1 {
     }
 
     table, th, td {
-        font-size: 0.8rem; /* Adjust font size for readability */
+        font-size: 0.8rem;
     }
 
     h1 {
