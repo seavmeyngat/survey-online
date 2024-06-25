@@ -1,24 +1,18 @@
 document.forms[0].addEventListener("submit", submitForm);
 
-//         function submitForm(event) {
-//             event.preventDefault();
-//             const fullName = document.getElementById("fullname").value;
-//             console.log(fullName);
-//             const age = document.getElementById("age").value;
-//             console.log(age)
-//         }
+
 
 
 function submitForm(event) {
     event.preventDefault();
 
     var errorMessage = document.getElementById('error-message');
-    errorMessage.innerText = '';  // Clear previous error message
+    errorMessage.innerText = '';  
 
     var fullname = document.getElementById('fullname').value.trim();
-    console.log(fullname);
-    var age = document.getElementById('age').value.trim();
-    console.log(age);
+   
+    var email = document.getElementById('email').value.trim();
+
     var gradeLevel = document.querySelector('input[name="fav_language"]:checked');
     var schoolType = document.querySelector('input[name="type-school"]:checked');
 
@@ -37,13 +31,13 @@ function submitForm(event) {
 
 
     var learningPreferences = [];
-    document.querySelectorAll('input[id^="flexCheckDefault5"]:checked').forEach(checkbox => {
+    document.querySelectorAll('input[name="aspect1"]:checked').forEach(checkbox => {
         learningPreferences.push(checkbox.nextElementSibling.innerText.trim());
     });
     var otherLearningPreference = document.querySelector('.other').value.trim();
 
     var learningEnvironment = [];
-    document.querySelectorAll('input[id^="flexCheckDefault10"]:checked').forEach(checkbox => {
+    document.querySelectorAll('input[name="aspect2"]:checked').forEach(checkbox => {
         learningEnvironment.push(checkbox.nextElementSibling.innerText.trim());
     });
     var otherLearningEnvironment = document.querySelector('.other').value.trim();
@@ -52,7 +46,7 @@ function submitForm(event) {
     var instructorFeedback = document.querySelector('input[name="s6-01"]:checked');
 
     var goalsAchieve = [];
-    document.querySelectorAll('input[id^="flexCheckDefault13"]:checked').forEach(checkbox => {
+    document.querySelectorAll('input[name="goals-achieve"]:checked').forEach(checkbox => {
         goalsAchieve.push(checkbox.nextElementSibling.innerText.trim());
     });
     var otherGoalsAchieve = document.querySelector('.other').value.trim();
@@ -69,8 +63,8 @@ function submitForm(event) {
         return false;
     }
 
-    if (!age || age <= 0) {
-        errorMessage.innerText = 'Please enter a valid age.';
+    if (!email) {
+        errorMessage.innerText = 'Please enter a valid email.';
         return false;
     }
 
@@ -83,10 +77,74 @@ function submitForm(event) {
         errorMessage.innerText = 'Please select the type of school.';
         return false;
     }
+    if(!interestWebDev){
+        errorMessage.innerText='Please select the interestEWebDev.';
+        return false;
+    }
+    if(!prevExperience){
+        errorMessage.innerText='Please select the previous experience.';
+        return false;
+    }
+    if(!experienceDescription){
+        errorMessage.innerText='Please complate Experience Description.';
+        return false;
+    }
+    if(!interestAspects){
+        errorMessage.innerText='Please check interest aspects.';
+        return false;
+    }
+    if(!familiarityActivePedagogy){
+        errorMessage.innerText='Please check familiar with the concept of active pedagogy .';
+        return false;
+    }
+    if(!understandingActivePedagogy){
+        errorMessage.innerText='Please complete understanding Active Pedagogy.';
+        return false;
+    }
+   if(!participatedActivePedagogy){
+    errorMessage.innerText='Please check participated Active Pedagogy.';
+    return false;
+   }
+   if(!experienceActivePedagogy){
+    errorMessage.innerText='Please check experience Active Pedagogy.';
+    return false;
+   }
+   if(!learningPreferences){
+    errorMessage.innerText='Please check learning Preferences.';
+    return false;
+   }
+   if(!learningEnvironment){
+    errorMessage.innerText='Please check learning Enviroment.';
+    return false;
+   }
+   if(!peerInteraction){
+    errorMessage.innerText='Please select peer interaction.';
+    return false;
+   }
+   if(!instructorFeedback){
+    errorMessage.innerText='Please check instructor Feedback.';
+    return false;
+   }
+   if(!goalsAchieve){
+    errorMessage.innerText='Please check goal achieve.';
+    return false;
+   }
+   if(!webDevelopmentHelp){
+    errorMessage.innerText='Please complete webDevelopmentHelp.';
+    return false
+   }
+   if(!improvementSuggestions){
+    errorMessage.innerText='Please complete improvment suggestion.';
+    return false;
+   }
+   if(!additionalComments){
+    errorMessage.innerText='Please complete additional comments.';
+    return false;
+   }
 
     
     console.log('Full Name:', fullname);
-    console.log('Age:', age);
+    console.log('email:', email);
     console.log('Current Grade Level:', gradeLevel.value);
     console.log('Type of School:', schoolType.value);
 
@@ -128,10 +186,22 @@ function submitForm(event) {
     console.log('Additional Comments:', additionalComments);
 
 
-    window.location.href = '/page-thanks/index.html';
+    // window.location.href = '/page-thanks/idex.html';
 
     return true;
 }
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    if (!submitForm(event)) {
+       
+        event.preventDefault();
+        console.log('Please complete the form correctly before submitting.');
+    } else {
+        
+        console.log('Navigating to thank you page...');
+     
+        window.location.href = '/page-thanks/idex.html';
+    }
+});
 
 function clearForm() {
     document.getElementById('myForm').reset();
