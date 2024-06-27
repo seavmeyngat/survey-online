@@ -5,7 +5,6 @@
     overflow: hidden;
     background-color: #FFEFEF;
 }
-
 .box {
     width: 80%;
     height: auto;
@@ -13,7 +12,10 @@
     background-color: white;
     margin: auto;
 }
-
+.box-1{
+    margin-top: 50px;
+    display: flex;
+}
 .box-Dashbaord {
     width: 100%;
     height: 76px;
@@ -23,102 +25,32 @@
 .box-Dashbaord h1{
     text-align: center;
 }
-.box-all {
-    display: flex;
-}
-
 .left, .right {
     width: 40%;
     height: auto;
     margin-left: 5%;
 }
-
-.box-1, .box-2, .box1, .box2 {
+.box-2{
     width: 100%;
-    background-color: #F3C2C2;
-    margin-top: 70px;
+    display: flex;
 }
-
-.box-1 { height: 200px; }
-.box-2 { height: 300px; }
-.box1 { height: 200px; }
-.box2 { height: 300px; }
-
-.box-2 table, .box1 table, .box2 table, .box-1 table {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+.left-1, .right-1 {
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
 }
-
 table, th, td {
     border: 1px solid black;
 }
-
-h1 {
-    color: #1655F6;
-    margin-left: 45%;
+table {
+    width: 100%;
+    height: 200px;
+    text-align: center;
 }
-
-
-
-/* For screens that are 768px wide or less */
-@media (max-width: 768px) {
-    .box, .box-Dashbaord {
-        width: 100%;
-    }
-
-    .box-all {
-        display: block;
-    }
-
-    .left, .right {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .box-1, .box-2, .box1, .box2 {
-        margin-top: 20px;
-    }
-
-    h1 {
-        margin-left: 0;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-}
-
-/* For screens that are 480px wide or less */
-@media (max-width: 480px) {
-    .container {
-        height: auto; 
-    }
-
-    .box, .box-Dashbaord {
-        width: 100%;
-    }
-
-    .box-all {
-        display: block;
-    }
-
-    .left, .right {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .box-1, .box-2, .box1, .box2 {
-        margin-top: 10px;
-        padding: 10px;
-    }
-
-    table, th, td {
-        font-size: 0.8rem;
-    }
-
-    h1 {
-        margin-left: 0;
-        text-align: center;
-        font-size: 1.2rem;
-    }
+select{
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
 }
