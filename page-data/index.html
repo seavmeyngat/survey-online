@@ -15,49 +15,69 @@
             <div class="box-1">
                 <div class="left">
                         <table>
-                            <tr>
+                            <tr id="nR">
                               <th>Number of Respone</th>
                             </tr>
                             <tr>
-                              <td>30</td>
+                              <td  id="demo01"></td>
                             </tr>
                           </table> 
                 </div>
                 <div class="right">
                         <table>
+
                             <tr>
                               <th>students with previuse web development</th>
+
+                            <tr id="nY">
+                              <th>Number of Respone</th>
+
                             </tr>
                             <tr>
-                              <td>30</td>
+                              <td id="dem02"></td>
                             </tr>
                           </table> 
                 </div>
             </div>
             <div class="box-2">
               <div class="left-1">
-                <select name="" id="">
+                
+                <select name="" id="gradeLervel" onchange="fetchApi4()">
                   <option value="">what is your count?</option>
-                  <option value="">Grade 10</option>
-                  <option value="">Grade 11</option>
-                  <option value="">Grade 12(failed)</option>
-                  <option value="">Grade 12(pass)</option>
-                  <option value="">Grade 9</option>
+                  <option value="Grade-9 ">Grade 9</option>
+                  <option value="Grade-10">Grade 10</option>
+                  <option value="Grade-11">Grade 11</option>
+                  <option value="Grade-12(failed)">Grade 12(failed)</option>
+                  <option value="Grade-12-pass">Grade 12(pass)</option>
+                 
                 </select>
-                <select name="" id="">
+                <select name="" id="type-school" onchange="fetchApi5()">
                   <option value="">what is your school?</option>
-                  <option value="">FSD</option>
-                  <option value="">Partner NGO</option>
-                  <option value="">Private School</option>
-                  <option value="">Public School</option>
+                  <option value="Private-School">Private School</option>
+                  <option value="Public-School">Public School</option> 
+                  <option value="FSD">FSD</option>
+                  <option value="Partner-NGO">Partner NGO</option>
+                  
                 </select>
-              </div>
-              <div class="right-1">
 
               </div>
+
+              <div class="right-1">
+
+
+              <div class="answer4">
+                <div class="right-1" id="demo"></div>
+                
+                <div class="right-1" id="demo1"></div>
+
+              </div>
+              
+
             </div>
+            
             
           </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -155,89 +155,89 @@ function submitForm(event) {
 
 
 
-    // if (!fullname || fullname.length < 3) {
-    //     errorMessage.innerText = 'Name must be at least 3 characters long.';
-    //     return false;
-    // }
+    if (!fullname || fullname.length < 3) {
+        errorMessage.innerText = 'Name must be at least 3 characters long.';
+        return false;
+    }
 
-    // if (!email) {
-    //     errorMessage.innerText = 'Please enter a valid email.';
-    //     return false;
-    // }
+    if (!email) {
+        errorMessage.innerText = 'Please enter a valid email.';
+        return false;
+    }
 
-    // if (!gradeLevel) {
-    //     errorMessage.innerText = 'Please select your current grade level.';
-    //     return false;
-    // }
+    if (!levels) {
+        errorMessage.innerText = 'Please select your current grade level.';
+        return false;
+    }
 
-    // if (!schoolType) {
-    //     errorMessage.innerText = 'Please select the type of school.';
-    //     return false;
-    // }
-    // if (!interestWebDev) {
-    //     errorMessage.innerText = 'Please select the interestEWebDev.';
-    //     return false;
-    // }
-    // if (!prevExperience) {
-    //     errorMessage.innerText = 'Please select the previous experience.';
-    //     return false;
-    // }
-    // if (!experienceDescription) {
-    //     errorMessage.innerText = 'Please complate Experience Description.';
-    //     return false;
-    // }
-    // if (!interestAspects) {
-    //     errorMessage.innerText = 'Please check interest aspects.';
-    //     return false;
-    // }
-    // if (!familiarityActivePedagogy) {
-    //     errorMessage.innerText = 'Please check familiar with the concept of active pedagogy .';
-    //     return false;
-    // }
-    // if (!understandingActivePedagogy) {
-    //     errorMessage.innerText = 'Please complete understanding Active Pedagogy.';
-    //     return false;
-    // }
-    // if (!participatedActivePedagogy) {
-    //     errorMessage.innerText = 'Please check participated Active Pedagogy.';
-    //     return false;
-    // }
-    // if (!experienceActivePedagogy) {
-    //     errorMessage.innerText = 'Please check experience Active Pedagogy.';
-    //     return false;
-    // }
-    // if (!learningPreferences) {
-    //     errorMessage.innerText = 'Please check learning Preferences.';
-    //     return false;
-    // }
-    // if (!learningEnvironment) {
-    //     errorMessage.innerText = 'Please check learning Enviroment.';
-    //     return false;
-    // }
-    // if (!peerInteraction) {
-    //     errorMessage.innerText = 'Please select peer interaction.';
-    //     return false;
-    // }
-    // if (!instructorFeedback) {
-    //     errorMessage.innerText = 'Please check instructor Feedback.';
-    //     return false;
-    // }
-    // if (!goalsAchieve) {
-    //     errorMessage.innerText = 'Please check goal achieve.';
-    //     return false;
-    // }
-    // if (!webDevelopmentHelp) {
-    //     errorMessage.innerText = 'Please complete webDevelopmentHelp.';
-    //     return false
-    // }
-    // if (!improvementSuggestions) {
-    //     errorMessage.innerText = 'Please complete improvment suggestion.';
-    //     return false;
-    // }
-    // if (!additionalComments) {
-    //     errorMessage.innerText = 'Please complete additional comments.';
-    //     return false;
-    // }
+    if (!schoolType) {
+        errorMessage.innerText = 'Please select the type of school.';
+        return false;
+    }
+    if (!interestWebDev) {
+        errorMessage.innerText = 'Please select the interestEWebDev.';
+        return false;
+    }
+    if (!prevExperience) {
+        errorMessage.innerText = 'Please select the previous experience.';
+        return false;
+    }
+    if (!experienceDescription) {
+        errorMessage.innerText = 'Please complate Experience Description.';
+        return false;
+    }
+    if (!interestAspects) {
+        errorMessage.innerText = 'Please check interest aspects.';
+        return false;
+    }
+    if (!familiarityActivePedagogy) {
+        errorMessage.innerText = 'Please check familiar with the concept of active pedagogy .';
+        return false;
+    }
+    if (!understandingActivePedagogy) {
+        errorMessage.innerText = 'Please complete understanding Active Pedagogy.';
+        return false;
+    }
+    if (!participatedActivePedagogy) {
+        errorMessage.innerText = 'Please check participated Active Pedagogy.';
+        return false;
+    }
+    if (!experienceActivePedagogy) {
+        errorMessage.innerText = 'Please check experience Active Pedagogy.';
+        return false;
+    }
+    if (!learningPreferences) {
+        errorMessage.innerText = 'Please check learning Preferences.';
+        return false;
+    }
+    if (!learningEnvironment) {
+        errorMessage.innerText = 'Please check learning Enviroment.';
+        return false;
+    }
+    if (!peerInteraction) {
+        errorMessage.innerText = 'Please select peer interaction.';
+        return false;
+    }
+    if (!instructorFeedback) {
+        errorMessage.innerText = 'Please check instructor Feedback.';
+        return false;
+    }
+    if (!goalsAchieve) {
+        errorMessage.innerText = 'Please check goal achieve.';
+        return false;
+    }
+    if (!webDevelopmentHelp) {
+        errorMessage.innerText = 'Please complete webDevelopmentHelp.';
+        return false
+    }
+    if (!improvementSuggestions) {
+        errorMessage.innerText = 'Please complete improvment suggestion.';
+        return false;
+    }
+    if (!additionalComments) {
+        errorMessage.innerText = 'Please complete additional comments.';
+        return false;
+    }
    
 
 
@@ -293,7 +293,7 @@ function submitForm(event) {
                 fullname: fullname.value,
                 email: email.value,
                 question_id: i,
-                created_by: "Team4",
+                created_by: "laiheang-seavmey",
 
             });
         }
@@ -321,7 +321,7 @@ function submitForm(event) {
         data[20].answer = [additionalComments];
         console.log(data);
         saveDataToAPI(data);
-        // window.location.href = '/page-thanks/idex.html';
+        
         
         
     
@@ -354,6 +354,7 @@ function saveDataToAPI(data) {
         .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
+            window.location.href = '/page-thanks/idex.html';
         })
         .catch((error) => {
             console.error('Error:', error);
