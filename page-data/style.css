@@ -32,15 +32,23 @@
 }
 .box-2{
     width: 100%;
-    display: flex;
+    /* display: flex; */
 }
-.left-1, .right-1 {
-    width: 40%;
+.left-1{
+    width: 85%;
     height: auto;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#type-school{
     margin-left: 5%;
 }
 table, th, td {
     border: 1px solid black;
+    font-size: 20px;
+    font-family: inder;
+    font-weight: Regular;
 }
 table {
     width: 100%;
@@ -54,3 +62,26 @@ select{
     margin-top: 20px;
     text-align: center;
 }
+.right-1{
+    border: 1px solid black;
+    width: 45%;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.answer4{
+    width: 89%;
+    height: auto;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+#demo1{
+    margin-left: 2%;
+}
+
