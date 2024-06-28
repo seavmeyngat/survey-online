@@ -237,7 +237,7 @@ function submitForm(event) {
     if (!additionalComments) {
         errorMessage.innerText = 'Please complete additional comments.';
         return false;
-    }
+
    
 
 
