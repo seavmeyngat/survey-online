@@ -237,10 +237,7 @@ function submitForm(event) {
     if (!additionalComments) {
         errorMessage.innerText = 'Please complete additional comments.';
         return false;
-    }else{
-        window.location.href = '/page-thanks/idex.html';
 
-    }
    
 
 
@@ -296,7 +293,7 @@ function submitForm(event) {
                 fullname: fullname.value,
                 email: email.value,
                 question_id: i,
-                created_by: "Team4",
+                created_by: "laiheang-seavmey",
 
             });
         }
@@ -357,6 +354,7 @@ function saveDataToAPI(data) {
         .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
+            window.location.href = '/page-thanks/idex.html';
         })
         .catch((error) => {
             console.error('Error:', error);

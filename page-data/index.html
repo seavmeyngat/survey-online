@@ -6,6 +6,7 @@
     <title>Dashbaord</title>
     <link rel="stylesheet" href="style.css">
     
+
 </head>
 <body>
     <div class="container">
@@ -13,95 +14,62 @@
             <div class="box-Dashbaord">
                 <h1>Dashbaord</h1>
             </div>
-            <div class="box-all">
+            <div class="box-1">
                 <div class="left">
-                    <div class="box-1">
                         <table>
-                            <tr>
+                            <tr id="nR">
                               <th>Number of Respone</th>
                             </tr>
                             <tr>
-                              <td>30</td>
+                              <td  id="demo01"></td>
                             </tr>
                           </table> 
-                    </div>
-                    <div class="box-2">
-                        <table>
-                            <tr>
-                              <th>Number of Respone</th>
-                              <th>count of no</th>
-                            </tr>
-                            <tr>
-                              <td>Grade 10</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Grade 11</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                                <td>Grade 12(failed)</td>
-                                <td></td>
-                            </tr>
-                              <tr>
-                                <td>Grade 12(pass)</td>
-                                <td></td>
-                            </tr>
-                              <tr>
-                                <td>Grade 9</td>
-                                <td></td>
-                            </tr>
-                              <tr>
-                                <td>Total</td>
-                                <td></td>
-                            </tr>
-                          </table> 
-                    </div>
                 </div>
-                
                 <div class="right">
-                    <div class="box1">
                         <table>
-                            <tr>
-                              <th>students with previuse web development</th>
+                            <tr id="nY">
+                              <th>Number of Respone</th>
                             </tr>
                             <tr>
-                              <td>30</td>
-                            </tr>
-                          </table>
-                    </div>
-                    <div class="box2">
-                        <table>
-                            <tr>
-                              <th>what is your school?</th>
-                              <th>count of no</th>
-                            </tr>
-                            <tr>
-                              <td>FSD</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Partner NGO</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                                <td>Private School</td>
-                                <td></td>
-                            </tr>
-                              <tr>
-                                <td>Public School</td>
-                                <td></td>
-                            </tr>
-                              <tr>
-                                <td>Total</td>
-                                <td></td>
+                              <td id="dem02"></td>
                             </tr>
                           </table> 
-                    </div>
                 </div>
             </div>
+            <div class="box-2">
+              <div class="left-1">
+                
+                <select name="" id="gradeLervel" onchange="fetchApi4()">
+                  <option value="">what is your count?</option>
+                  <option value="Grade-9 ">Grade 9</option>
+                  <option value="Grade-10">Grade 10</option>
+                  <option value="Grade-11">Grade 11</option>
+                  <option value="Grade-12(failed)">Grade 12(failed)</option>
+                  <option value="Grade-12-pass">Grade 12(pass)</option>
+                 
+                </select>
+                <select name="" id="type-school" onchange="fetchApi5()">
+                  <option value="">what is your school?</option>
+                  <option value="Private-School">Private School</option>
+                  <option value="Public-School">Public School</option> 
+                  <option value="FSD">FSD</option>
+                  <option value="Partner-NGO">Partner NGO</option>
+                  
+                </select>
+
+              </div>
+              <div class="answer4">
+                <div class="right-1" id="demo"></div>
+                
+                <div class="right-1" id="demo1"></div>
+              </div>
+              
+
+            </div>
             
-        </div>
+            
+          </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
